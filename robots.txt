@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sergesiluyanov.github.io/playlists_mail_domain/sitemap.xml
