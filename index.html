@@ -1,116 +1,110 @@
+
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Криминогенная обстановка в Кузбассе — интервью</title>
-    <meta name="description" content="Интервью о работе следствия, преступности в Кемеровской области, лихих 90-х и расследовании резонансных дел в Кузбассе." />
-    <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="Криминогенная обстановка в Кузбассе — интервью" />
-    <meta property="og:description" content="Интервью о работе следствия, проверке показаний подозреваемых, преступности в Кемеровской области, лихих 90-х, банде милиционеров и расследовании резонансных дел в Кузбассе." />
-    <meta property="og:type" content="video.other" />
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "VideoObject",
-      "name": "Криминогенная обстановка в Кузбассе — интервью",
-      "description": "Интервью о работе следствия, проверке показаний подозреваемых, преступности в Кемеровской области, лихих 90-х, банде милиционеров и расследовании резонансных дел в Кузбассе.",
-      "thumbnailUrl": "https://kinescope.dev/embed/uUoA2bCPhin68df41PtpC9/thumbnail",
-      "embedUrl": "https://kinescope.dev/embed/uUoA2bCPhin68df41PtpC9?v=2.179.2",
-      "uploadDate": "2025-01-01",
-      "duration": "PT6M15S",
-      "transcript": "Интервью о проверке показаний подозреваемых, работе следствия в Кузбассе. Обсуждение криминогенной обстановки в Кемеровской области, лихих 90-х, банды милиционеров. Рассказ о расследовании убийства несовершеннолетней в Новокузнецке, извлечении тела из шахтового штрека глубиной 280 метров."
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Трансляции</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    </script>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        min-height: 100vh;
-        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        font-family: sans-serif;
-      }
-      .layout {
-        width: 100%;
-        max-width: 1280px;
-        display: flex;
-        gap: 16px;
-        align-items: flex-start;
-      }
-      .player-wrap {
-        flex: 1 1 0;
-        min-width: 0;
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-      }
-      .player-wrap > div {
-        position: relative;
-        padding-top: 56.25%;
-        width: 100%;
-      }
-      .player-wrap iframe {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        border: none;
-      }
-      .chat-wrap {
-        width: 360px;
-        flex-shrink: 0;
-        height: 507px; /* ~56.25% of max player height at 1280px wide */
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-      }
-      .chat-wrap iframe {
-        width: 100%;
-        height: 100%;
-        border: none;
-        display: block;
-      }
-      @media (max-width: 860px) {
-        .layout {
-          flex-direction: column;
-        }
-        .chat-wrap {
-          width: 100%;
-          height: 420px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="layout">
-      <div class="player-wrap">
-        <div>
-          <iframe
-            src="https://kinescope.dev/embed/0cyydmuAzCfN4R7FhckDPA"
-            allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-      <div class="chat-wrap">
-        <iframe
-          src="https://kinescope.dev/chat/0cyydmuAzCfN4R7FhckDPA"
-          allow="microphone; clipboard-write;"
-          allowfullscreen
-        ></iframe>
-      </div>
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      padding: 24px 16px;
+    }
+
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .tab {
+      padding: 10px 24px;
+      border-radius: 8px;
+      border: 1px solid #333;
+      background: #1a1a1a;
+      color: #ccc;
+      font-size: 15px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      user-select: none;
+    }
+
+    .tab:hover {
+      background: #252525;
+      border-color: #555;
+      color: #fff;
+    }
+
+    .tab.active {
+      background: #6c5ce7;
+      border-color: #6c5ce7;
+      color: #fff;
+    }
+
+    .player-wrapper {
+      width: 100%;
+      background: #000;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .player-wrapper .embed {
+      display: none;
+    }
+
+    .player-wrapper .embed.active {
+      display: block;
+    }
+
+    @media (max-width: 600px) {
+      .container { padding: 12px 8px; }
+      .tab { padding: 8px 16px; font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="tabs" id="tabs">
+      <button class="tab active" data-idx="0">Главная сцена</button>
+      <button class="tab" data-idx="1">Digital Learning</button>
+      <button class="tab" data-idx="2">Smart Ranking</button>
     </div>
-    <!-- Hidden part: full transcript for AI (LLM-friendly) -->
-    <div style="display: none;" data-video-transcript="true">
-      <p>&lt;00:00:03.719&gt; Это &lt;00:00:04.399&gt; не &lt;00:00:05.080&gt; эксперимент, &lt;00:00:05.820&gt; это &lt;00:00:05.940&gt; именно &lt;00:00:06.320&gt; мы &lt;00:00:06.600&gt; проверяем &lt;00:00:07.400&gt; его &lt;00:00:07.560&gt; показания. &lt;00:00:08.540&gt; То &lt;00:00:09.000&gt; есть &lt;00:00:09.080&gt; он &lt;00:00:09.200&gt; говорит, &lt;00:00:09.400&gt; да, &lt;00:00:09.580&gt; я &lt;00:00:09.860&gt; пришел, &lt;00:00:10.280&gt; я &lt;00:00:10.400&gt; взял &lt;00:00:10.760&gt; нож &lt;00:00:11.040&gt; в &lt;00:00:11.320&gt; левую &lt;00:00:11.680&gt; руку &lt;00:00:12.040&gt; и &lt;00:00:12.140&gt; нанес &lt;00:00:12.520&gt; ему &lt;00:00:12.640&gt; удар &lt;00:00:13.100&gt; туда-то. &lt;00:00:14.420&gt; А &lt;00:00:14.620&gt; он &lt;00:00:14.740&gt; правша &lt;00:00:15.100&gt; или &lt;00:00:15.380&gt; левша, &lt;00:00:16.120&gt; к &lt;00:00:16.360&gt; примеру. &lt;00:00:16.820&gt; Не &lt;00:00:17.080&gt; могут, &lt;00:00:17.520&gt; допустим, &lt;00:00:17.960&gt; если &lt;00:00:18.320&gt; он &lt;00:00:18.460&gt; правша, &lt;00:00:19.400&gt; но &lt;00:00:19.500&gt; мы &lt;00:00:19.620&gt; все &lt;00:00:19.760&gt; понимаем. &lt;00:00:21.400&gt; С &lt;00:00:21.400&gt; какой &lt;00:00:21.560&gt; стороны &lt;00:00:21.980&gt; вы &lt;00:00:22.180&gt; подходили &lt;00:00:22.800&gt; и &lt;00:00:22.900&gt; как? &lt;00:00:23.200&gt; После &lt;00:00:23.620&gt; этого &lt;00:00:34.700&gt; куда &lt;00:00:35.100&gt; дели &lt;00:00:35.420&gt; нож? &lt;00:00:46.540&gt; Я &lt;00:00:46.700&gt; в &lt;00:00:46.820&gt; таком &lt;00:00:47.040&gt; состоянии &lt;00:00:47.480&gt; был, &lt;00:00:47.740&gt; тем &lt;00:00:48.460&gt; более, &lt;00:00:48.880&gt; с &lt;00:00:49.000&gt; Усляной. &lt;00:00:50.260&gt; Бывает, &lt;00:00:50.860&gt; что &lt;00:00:51.000&gt; они &lt;00:00:51.140&gt; сами &lt;00:00:51.340&gt; себя &lt;00:00:51.620&gt; пытаются &lt;00:00:53.080&gt; обелить. &lt;00:00:53.680&gt; Да, &lt;00:00:53.840&gt; я &lt;00:00:54.040&gt; защищался. &lt;00:00:55.220&gt; И &lt;00:00:55.700&gt; поэтому &lt;00:00:56.060&gt; я &lt;00:00:56.320&gt; нанес &lt;00:00:56.600&gt; 10 &lt;00:00:56.880&gt; ударов &lt;00:00:57.440&gt; в &lt;00:00:57.500&gt; спину &lt;00:00:57.780&gt; ножом.</p>
+    <div class="player-wrapper" id="player">
+      <div class="embed active" style="position: relative; padding-top: 91.37%;"><iframe src="https://kinescope.dev/embed/0cz5nn3gZqadNpumXEL4S5" allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;" frameborder="0" allowfullscreen style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;"></iframe></div>
+      <div class="embed" style="position: relative; padding-top: 56.25%;"><iframe src="https://kinescope.dev/embed/0cz5nq9651ozupqTkezdsY" allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;" frameborder="0" allowfullscreen style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;"></iframe></div>
+      <div class="embed" style="position: relative; padding-top: 56.25%;"><iframe src="https://kinescope.dev/embed/0cz5nqTY2TtKiq5XXphRq1" allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;" frameborder="0" allowfullscreen style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;"></iframe></div>
     </div>
-  </body>
+  </div>
+
+  <script>
+    var embeds = document.querySelectorAll('#player .embed');
+    document.getElementById('tabs').addEventListener('click', function(e) {
+      var tab = e.target.closest('.tab');
+      if (!tab) return;
+
+      document.querySelectorAll('.tab').forEach(function(t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+
+      var idx = parseInt(tab.dataset.idx, 10);
+      embeds.forEach(function(el, i) {
+        el.classList.toggle('active', i === idx);
+      });
+    });
+  </script>
+</body>
 </html>
